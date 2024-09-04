@@ -554,6 +554,14 @@ body {
     height: 70%;
     border: 1px solid #ccc;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    /* Centrar la imagen */
+    background-size: cover;
+    /* La imagen se ajusta al contenedor sin cortar ni distorsionar */
+    background-repeat: no-repeat;
+    /* Evitar que la imagen se repita */
+    background-attachment: fixed;
+    /* Mantener el efecto de fondo fijo */
 
 }
 
