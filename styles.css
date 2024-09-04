@@ -5,41 +5,54 @@ body {
     background-color: #f0f8ff;
     background-size: cover;
     background-attachment: fixed;
-    box-sizing: border-box; /* Aplicar a todo el documento */
+    box-sizing: border-box;
+    /* Aplicar a todo el documento */
 
 }
 
 /* Configuración de la sección */
 .section {
-    height: 100vh; /* La sección ocupa toda la altura de la ventana */
+    height: 110vh;
+    /* La sección ocupa toda la altura de la ventana */
     display: flex;
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
     font-size: 2em;
     text-align: center;
-    
-    background-position: center; /* Centrar la imagen */
-    background-size: cover; /* La imagen se ajusta al contenedor sin cortar ni distorsionar */
-    background-repeat: no-repeat; /* Evitar que la imagen se repita */
-    background-attachment: fixed; /* Mantener el efecto de fondo fijo */
+
+    background-position: center;
+    /* Centrar la imagen */
+    background-size: cover;
+    /* La imagen se ajusta al contenedor sin cortar ni distorsionar */
+    background-repeat: no-repeat;
+    /* Evitar que la imagen se repita */
+    background-attachment: fixed;
+    /* Mantener el efecto de fondo fijo */
 }
 
-.titulo1, .nombre, .fechaCumple, .contador, #clock{
+.titulo1,
+.nombre,
+.fechaCumple,
+.contador,
+#clock {
     font-family: 'Beau Rivage';
-    color: rgb(255, 255, 255); /* Color del texto */
-    
+    color: rgb(255, 255, 255);
+    /* Color del texto */
+
 }
 
 
-#music-player{
+#music-player {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f8f8f8; /* Color de fondo del reproductor */
+    background-color: #f8f8f8;
+    /* Color de fondo del reproductor */
     padding: 10px;
-    box-shadow: 0 -2px 5px rgba(0,0,0,0.2); /* Sombra para el reproductor */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    /* Sombra para el reproductor */
 }
 
 
@@ -91,8 +104,8 @@ body {
 }
 
 .circle {
-    width: 90px;
-    height: 90px;
+    width: 60px;
+    height: 60px;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 50%;
     display: flex;
@@ -146,21 +159,26 @@ body {
     padding: 20px;
     background-size: cover;
     background-position: center;
-    box-sizing: border-box; /* Incluir padding y borde en el tamaño total del elemento */
+    box-sizing: border-box;
+    /* Incluir padding y borde en el tamaño total del elemento */
 
 }
 
-#section5 h2{
+#section5 h2 {
     font-family: 'Beau Rivage';
+    margin: 0%;
 }
 
-#section5 p{
+#section5 p {
     font-family: 'Beau Rivage';
-    font-size: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 0%
 }
 
 /* Estilos de las imágenes */
-.imgIglesia, .imgRecep {
+.imgIglesia,
+.imgRecep {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -177,10 +195,12 @@ body {
 }
 
 /* Estilos para los eventos, con flexbox */
-.event-left, .event-right {
+.event-left,
+.event-right {
     flex: 1;
     text-align: center;
-    min-width: 300px; /* Asegura que los elementos no sean demasiado pequeños */
+    min-width: 300px;
+    /* Asegura que los elementos no sean demasiado pequeños */
     box-sizing: border-box;
 }
 
@@ -206,13 +226,17 @@ button:hover {
         font-size: 70%;
     }
 
-    .event-left, .event-right {
-        max-width: 100%; /* Asegura que ocupen el 100% del ancho disponible */
+    .event-left,
+    .event-right {
+        max-width: 100%;
+        /* Asegura que ocupen el 100% del ancho disponible */
         font-size: auto;
     }
 
-    .imgIglesia, .imgRecep {
-        width: 40%; /* Imágenes adaptadas a pantallas más pequeñas */
+    .imgIglesia,
+    .imgRecep {
+        width: 40%;
+        /* Imágenes adaptadas a pantallas más pequeñas */
         max-width: 900%;
     }
 }
@@ -249,9 +273,12 @@ button:hover {
     background-image: url('img/imagen4.jpg');
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar el contenido horizontalmente */
-    text-align: center; /* Centrar el texto */
-    padding: 20px; /* Espacio interno para que el contenido no toque los bordes */
+    align-items: center;
+    /* Centrar el contenido horizontalmente */
+    text-align: center;
+    /* Centrar el texto */
+    padding: 20px;
+    /* Espacio interno para que el contenido no toque los bordes */
     font-family: 'DM Serif Text';
     background-size: cover;
     background-position: center;
@@ -260,7 +287,8 @@ button:hover {
 
 /* Títulos */
 #section6 h2 {
-    font-size: 2.5em; /* Tamaño de fuente grande para pantallas grandes */
+    font-size: 2.5em;
+    /* Tamaño de fuente grande para pantallas grandes */
     color: #333;
     margin-bottom: 20px;
     font-family: 'Beau Rivage';
@@ -275,8 +303,9 @@ button:hover {
 
 /* Imagen de vestimenta */
 .vestimenta {
-    width: 50% !important; 
-    max-width: 500px; /* Limitar el ancho máximo de la imagen */
+    width: 50% !important;
+    max-width: 500px;
+    /* Limitar el ancho máximo de la imagen */
     height: auto;
     border-radius: 10px;
     margin: 20px 0;
@@ -285,7 +314,8 @@ button:hover {
 /* Media queries para dispositivos más pequeños */
 @media (max-width: 768px) {
     #section6 h2 {
-        font-size: 1.5em; /* Reducir el tamaño de la fuente en pantallas medianas */
+        font-size: 1.5em;
+        /* Reducir el tamaño de la fuente en pantallas medianas */
     }
 
     #section6 h3 {
@@ -293,13 +323,15 @@ button:hover {
     }
 
     .vestimenta {
-        max-width: 90%; /* Reducir el ancho máximo de la imagen para tabletas */
+        max-width: 90%;
+        /* Reducir el ancho máximo de la imagen para tabletas */
     }
 }
 
 @media (max-width: 480px) {
     #section6 h2 {
-        font-size: 1.5em; /* Ajustar tamaño de fuente para móviles */
+        font-size: 1.5em;
+        /* Ajustar tamaño de fuente para móviles */
     }
 
     #section6 h3 {
@@ -307,11 +339,13 @@ button:hover {
     }
 
     .vestimenta {
-        max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+        max-width: 100%;
+        /* Imagen ocupa todo el ancho disponible */
     }
 
     #section6 {
-        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+        padding: 15px;
+        /* Reducir el padding en pantallas pequeñas */
     }
 }
 
@@ -325,94 +359,103 @@ body {
 
 
 
-/* Estilos para la sección específica con ID #section9 */
-/* Estilos para la sección específica con ID #section9 */
+
 #section8 {
     background-image: url('img/imagen1.jpg');
     display: flex;
     flex-direction: column;
+    padding: 30%;
 }
 
-#section8 .titulo{
+#section8 .titulo {
     font-family: 'Beau Rivage';
 }
 
-.item-left{
+.item-left {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-right: 50%;
 }
 
-.item-right{
+.item-right {
     display: flex;
     flex-direction: row;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 25px;
+    padding-left: 50%;
 }
 
-.cajon1{
-    width: 35%;
+.cajon1 {
+    width: 100%;
     height: 70px;
     background-color: #BFD1FF;
-    border: 2px solid #ddd;     /* Borde con color y grosor */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    border: 2px solid #ddd;
+    /* Borde con color y grosor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para un efecto elevado */
     border-radius: 15px;
     margin-left: 15%;
 }
-.cajon2{
-    width: 310px;
+
+.cajon2 {
+    width: 100%;
     height: 70px;
     background-color: #BFD1FF;
-    border: 2px solid #ddd;     /* Borde con color y grosor */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto elevado */
+    border: 2px solid #ddd;
+    /* Borde con color y grosor */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra para un efecto elevado */
     border-radius: 15px;
     margin-right: 10px;
 }
 
-.icono{
+.icono {
     width: 60px;
     height: 60px;
 }
 
-.icono2{
+.icono2 {
     width: 60px;
     height: 60px;
-    padding-left: 45%;
+    /* padding-left: 45%; */
 }
 
-.subtitulo1{
+.subtitulo1 {
     margin: 0;
     font-size: 100%;
     font-family: 'Beau Rivage';
-    
+
 }
 
-.hora{
+.hora {
     margin: 0;
     font-size: 80%;
     font-family: 'DM Serif Text';
 }
 
 .triangulo1 {
-    margin-top:25px;
+    margin-top: 25px;
     margin-right: 15px;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 30px solid #BFD1FF; /* Color del triángulo */
+    border-bottom: 30px solid #BFD1FF;
+    /* Color del triángulo */
     transform: rotate(90deg);
 }
 
 .triangulo2 {
-    margin-top:25px;
+    margin-top: 25px;
     margin-left: 15px;
     width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
-    border-bottom: 30px solid #BFD1FF; /* Color del triángulo */
+    border-bottom: 30px solid #BFD1FF;
+    /* Color del triángulo */
     transform: rotate(-90deg);
 }
 
@@ -423,24 +466,24 @@ body {
     flex-direction: column;
 }
 
-#section9 h3{
+#section9 h3 {
     margin-top: 25px;
     font-family: 'Beau Rivage';
     padding-top: 50px;
-    font-size: 40px;    
+    font-size: 40px;
 }
 
-#section9 h1{
+#section9 h1 {
     font-family: 'Beau Rivage';
     font-size: 80px;
 }
 
-#section9 img{
+#section9 img {
     height: 100px;
     width: auto;
 }
 
-#section9 .sub{
+#section9 .sub {
     padding-bottom: 50px;
     padding-top: 0px;
 }
@@ -461,12 +504,13 @@ body {
     font-family: 'Beau Rivage';
 }
 
-#section11 h3{
+#section11 h3 {
     font-family: 'Bad Script';
 }
 
 #confirmar-btn {
-    background-color: #4CAF50; /* Color verde */
+    background-color: #4CAF50;
+    /* Color verde */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -475,7 +519,8 @@ body {
 }
 
 #confirmar-btn:hover {
-    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+    background-color: #45a049;
+    /* Color verde más oscuro al pasar el cursor */
 }
 
 #formulario {
@@ -489,7 +534,8 @@ body {
 }
 
 #enviar-btn {
-    background-color: #4CAF50; /* Color verde */
+    background-color: #4CAF50;
+    /* Color verde */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -499,7 +545,8 @@ body {
 }
 
 #enviar-btn:hover {
-    background-color: #45a049; /* Color verde más oscuro al pasar el cursor */
+    background-color: #45a049;
+    /* Color verde más oscuro al pasar el cursor */
 }
 
 
@@ -512,11 +559,11 @@ body {
     flex-direction: column;
 }
 
-#section12 h2{
+#section12 h2 {
     font-family: 'Beau Rivage';
 }
 
-#section12 h3{
+#section12 h3 {
     font-size: 30px;
     font-family: 'Bad Script';
 }
@@ -531,84 +578,4 @@ body {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 10px;
-}
-/* Ajustes adicionales de responsividad para dispositivos pequeños */
-@media (max-width: 768px) {
-    .section {
-        padding: 20px;
-    }
-    
-    .titulo1, .nombre, .fechaCumple {
-        font-size: 1.5em;
-    }
-
-    .event-info {
-        flex-direction: column;
-    }
-
-    .item-left, .item-right {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cajon1, .cajon2 {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .icono, .icono2 {
-        width: 40px;
-        height: 40px;
-    }
-}
-
-@media (max-width: 480px) {
-    .titulo1, .nombre, .fechaCumple {
-        font-size: 1.2em;
-    }
-
-    .cajon1, .cajon2 {
-        width: 90%;
-    }
-
-    .icono, .icono2 {
-        width: 30px;
-        height: 30px;
-    }
-}
-
-/* Ajuste de centrado y tamaño del itinerario */
-#section8 {
-    text-align: center;
-}
-
-#section8 .titulo {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.item-left, .item-right {
-    justify-content: center;
-}
-
-.cajon1, .cajon2 {
-    width: 60%;
-    max-width: 300px;
-    height: auto;
-    padding: 10px;
-    background-color: #BFD1FF;
-    border: 2px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 15px;
-}
-
-.icono, .icono2 {
-    margin-top: 15px;
-    width: 50px;
-    height: 50px;
-}
-
-.triangulo1, .triangulo2 {
-    margin-top: 25px;
 }
